@@ -17,7 +17,7 @@ const OptionsSection = () => {
     {
       title: 'Tengo un vehículo',
       description: 'Quiero que OperaTech lo administre y genere ingresos.',
-      linkText: 'Conocer administración →',
+      linkText: 'Ver Administración →',
       icon: '🚘'
     },
     {
