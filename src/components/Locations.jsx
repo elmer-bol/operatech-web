@@ -15,6 +15,7 @@ const Locations = () => {
         
         {/* Ciudades */}
         <div className="md:w-2/3 grid grid-cols-2 md:grid-cols-4 gap-8 w-full text-center md:text-left">
+          
           <div>
             <h3 className="text-xl font-bold mb-2">La Paz</h3>
             <div className="flex items-center justify-center md:justify-start gap-2 text-sm font-medium mb-4">
@@ -22,6 +23,7 @@ const Locations = () => {
             </div>
             <div className="text-gray-300 text-3xl">⛪</div>
           </div>
+
           <div>
             <h3 className="text-xl font-bold mb-2 text-gray-400">Santa Cruz</h3>
             <div className="flex items-center justify-center md:justify-start gap-2 text-sm font-medium text-gray-400 mb-4">
@@ -29,16 +31,23 @@ const Locations = () => {
             </div>
             <div className="text-gray-200 text-3xl">🌴</div>
           </div>
+
           <div>
             <h3 className="text-xl font-bold mb-2 text-gray-400">Cochabamba</h3>
-            <div className="text-sm font-medium text-gray-400 mb-4 mt-8">Próximamente</div>
+            <div className="flex items-center justify-center md:justify-start gap-2 text-sm font-medium text-gray-400 mb-4">
+              <span className="w-2 h-2 rounded-full bg-[#e60000]"></span> Próximamente
+            </div>
             <div className="text-gray-200 text-3xl">⛰️</div>
           </div>
+
           <div>
             <h3 className="text-xl font-bold mb-2 text-gray-400">Sucre</h3>
-            <div className="text-sm font-medium text-gray-400 mb-4 mt-8">Próximamente</div>
+            <div className="flex items-center justify-center md:justify-start gap-2 text-sm font-medium text-gray-400 mb-4">
+              <span className="w-2 h-2 rounded-full bg-[#e60000]"></span> Próximamente
+            </div>
             <div className="text-gray-200 text-3xl">🏛️</div>
           </div>
+
         </div>
       </div>
     </section>
