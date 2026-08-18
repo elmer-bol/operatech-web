@@ -6,6 +6,7 @@ import YangoBlock from './components/YangoBlock';
 import ContactCenter from './components/ContactCenter';
 import Benefits from './components/Benefits';
 import Locations from './components/Locations';
+import MediaTutorials from "./components/MediaTutorials";
 import Footer from './components/Footer';
 import FloatingBot from './components/FloatingBot';
 
@@ -14,12 +15,16 @@ function App() {
     <div className="font-sans antialiased text-gray-900 bg-white">
       <Header />
       <main className="pt-20">
+        {/* Embudo principal de ventas e información */}
         <Hero />
         <OptionsSection />
         <YangoBlock />
-        <ContactCenter />
         <Benefits />
         <Locations />
+        <ContactCenter />
+        
+        {/* Sección de soporte y capacitación movida al final */}
+        <MediaTutorials />
       </main>
       <Footer />
       <FloatingBot />
