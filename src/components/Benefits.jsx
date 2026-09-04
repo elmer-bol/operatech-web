@@ -1,6 +1,10 @@
 import React from 'react';
 
 const Benefits = () => {
+  const whatsappNumber = "59177145815";
+  const mensaje = "Hola, me gustaría conocer todos los beneficios de trabajar con OperaTech.";
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(mensaje)}`;
+
   const benefits = [
     { icon: '🎁', title: 'Premios y\nbeneficios' },
     { icon: '🎧', title: 'Soporte cuando\nlo necesitas' },
@@ -29,9 +33,15 @@ const Benefits = () => {
         ))}
       </div>
       
-      <button className="bg-transparent border border-gray-500 text-white px-8 py-3 rounded text-sm font-bold hover:bg-gray-800 transition">
+      {/* Botón reemplazado por un enlace a WhatsApp */}
+      <a 
+        href={whatsappUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-transparent border border-gray-500 text-white px-8 py-3 rounded text-sm font-bold hover:bg-gray-800 transition inline-block"
+      >
         CONOCE TODOS NUESTROS BENEFICIOS →
-      </button>
+      </a>
     </section>
   );
 };

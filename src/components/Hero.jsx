@@ -58,12 +58,25 @@ const Hero = () => {
             {heroData.descripcion}
           </p>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-12">
-            <button className="bg-[#e60000] text-white px-8 py-4 rounded font-bold hover:bg-red-700 transition text-center">
+            {/* Botón Primario: Directo al flujo de Registro de Conductor */}
+            <a 
+              href="https://wa.me/59177145815?text=Hola,%20quiero%20registrarme%20en%20el%20sistema."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#e60000] text-white px-8 py-4 rounded font-bold hover:bg-red-700 transition text-center block sm:inline-block"
+            >
               {heroData.textoBotonPrimario}
-            </button>
-            <button className="bg-transparent border border-gray-400 text-white px-8 py-4 rounded font-bold hover:bg-gray-400/20 transition text-center">
+            </a>
+            
+            {/* Botón Secundario: Envía un saludo general que disparará el menú principal del Bot */}
+            <a 
+              href="https://wa.me/59177145815?text=Hola,%20me%20gustaría%20conocer%20más%20opciones."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-transparent border border-gray-400 text-white px-8 py-4 rounded font-bold hover:bg-gray-400/20 transition text-center block sm:inline-block"
+            >
               {heroData.textoBotonSecundario}
-            </button>
+            </a>
           </div>
           
           <div className="flex flex-wrap gap-6 text-sm text-gray-300">
